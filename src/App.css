@@ -71,3 +71,56 @@ button {
   max-width: 250px;
   text-align: center;
 }
+
+/* Contact page */
+.contact {
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-sub {
+  margin-bottom: 2rem;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contact label {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--pink);
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.8rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid var(--pink);
+  border-radius: 4px;
+  background: var(--card);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  border-width: 2px;
+}
+
+.contact button {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.sent {
+  text-align: center;
+  margin-top: 1rem;
+}
