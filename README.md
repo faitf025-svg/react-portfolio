@@ -1,5 +1,20 @@
 # React + Vite
 
+## Contact form
+
+The contact form sends submissions through Formspree. Create a form in your
+[Formspree dashboard](https://formspree.io/) and set its endpoint in a local
+`.env.local` file:
+
+```text
+VITE_FORMSPREE_ENDPOINT=https://formspree.io/f/your-form-id
+```
+
+You can start with `.env.example`. Restart the Vite development server after
+changing the endpoint, and configure the same environment variable in your
+deployment settings. Formspree delivers submissions to the email address
+configured for that form.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

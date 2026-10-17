@@ -36,6 +36,41 @@ h1, h2, h3 {
   padding: 2rem;
 }
 
+.home-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  min-height: 60vh;
+}
+
+.home-intro {
+  flex: 1;
+}
+
+.home-portrait {
+  display: block;
+  width: min(40%, 340px);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 4px solid var(--pink);
+  border-radius: 50%;
+  box-shadow: 0 12px 30px rgba(90, 62, 72, 0.18);
+}
+
+@media (max-width: 600px) {
+  .home-hero {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .home-portrait {
+    width: min(70%, 280px);
+  }
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -123,4 +158,71 @@ button {
 .sent {
   text-align: center;
   margin-top: 1rem;
+}
+
+.form-error {
+  color: #b42318;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.about {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-intro,
+.about-section {
+  background: var(--card);
+  border: 2px solid rgba(224, 122, 159, 0.3);
+  border-radius: 18px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 24px rgba(90, 62, 72, 0.08);
+}
+
+.about-intro p,
+.about-section p,
+.about-section li {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.about-section h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.about-section h3 {
+  margin-bottom: 0.3rem;
+}
+
+.about-role {
+  font-weight: 700;
+  color: var(--pink);
+}
+
+.about-meta {
+  margin: 0.3rem 0 0.8rem;
+  font-style: italic;
+  color: var(--text);
+  opacity: 0.8;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skills-list li {
+  background: rgba(224, 122, 159, 0.12);
+  border: 1px solid rgba(224, 122, 159, 0.5);
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  font-weight: 600;
+  color: var(--text);
 }
